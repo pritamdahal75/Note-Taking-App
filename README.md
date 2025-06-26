@@ -20,11 +20,11 @@ A simple and user-friendly web-based note-taking application built using **HTML*
 ## 📂 How to Use
 
 1. Clone or download this repo:
-https://github.com/pritamdahal75/note-taking-app
+https://github.com/pritamdahal75/note-taking-app.git
 
 
 
-2. Open `index.html` in your browser — no additional setup needed.
+3. Open `index.html` in your browser — no additional setup needed.
 
 ## 🖼️ Screenshot
 
