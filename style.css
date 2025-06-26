@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  background-color: cyan;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header (Add Note button) */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: cyan;
+  padding: 10px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button style */
+button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: medium;
+  cursor: pointer;
+  float: right;
+}
+
+/* Instruction Text Below Header */
+.note-header {
+  margin-top: 60px;
+  text-align: center;
+  background-color: cyan;
+  padding: 10px;
+  font-size: 50px;
+  color: #333;
+}
+
+/* Notes container */
+#main {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Individual note card */
+.note {
+  background-color: white;
+  height: 400px;
+  width: 400px;
+  margin: 15px;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+/* Tool bar inside each note */
+.tool {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Icons */
+i {
+  padding: 5px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+/* Note text area */
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  height: calc(100% - 40px);
+  width: 100%;
+  padding: 10px;
+  font-size: medium;
+}
+
+/* Textarea focus style */
+textarea:focus {
+  color: black;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Timestamp style */
+.timestamp {
+  display: block;
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+/* Highlight pinned notes */
+.pinned {
+  border: 2px solid gold;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.8); /* soft gold glow */
+}
